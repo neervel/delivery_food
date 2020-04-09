@@ -41,6 +41,7 @@ body{
   background-image: url(../img/search.svg);
   background-repeat: no-repeat;
   width: 300px;
+  margin-left: auto;
 }
 
 .buttons{
@@ -68,7 +69,9 @@ body{
   color: white;
   margin-right: 10px;
 }
-
+.button-card-text{
+  margin-right: 10px;
+}
 .button-icon{
   margin-right: 6px;
   vertical-align: middle;
@@ -106,7 +109,6 @@ body{
 .section-heading{
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 44px;
 }
 
@@ -116,6 +118,7 @@ body{
   font-size: 36px;
   line-height: 42px;
   color: #000000;
+  margin-right: 30px;
 }
 
 .cards{
@@ -132,6 +135,11 @@ body{
   overflow: hidden;
   margin-bottom: 30px;
   flex-basis: 31%;
+  text-decoration: none;
+}
+
+.card:hover{
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card-image{
@@ -160,6 +168,10 @@ body{
   color: #000000;
 }
 
+.card-title-reg{
+  font-weight: 400;
+}
+
 .card-tag{
   margin: 0;
   font-style: normal;
@@ -178,7 +190,22 @@ body{
   flex-wrap: wrap;
 }
 
-.rating{
+.card-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.card-price-bold{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  margin-left: 30px;
+}
+
+.card-info .rating{
   margin-right: 26px;
   font-weight: bold;
   font-size: 18px;
@@ -196,6 +223,14 @@ body{
 .price{
   margin-right: 10px;
 }
+.ingredients{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #8C8C8C;
+}
+
 .category{
   text-overflow: ellipsis;
   overflow: hidden;
