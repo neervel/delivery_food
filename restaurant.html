@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" 
         rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
     </head>
 
 <body>
@@ -20,7 +21,7 @@
                     <img src="img/user.svg" alt="user" class="button-icon">
                     <span class="button-text">Войти</span>
                 </button>
-                <button class="button">
+                <button class="button" id="shopping-cart">
                     <img src="img/cart.svg" alt="shopping cart" class="button-icon">
                     <span class="button-text">Корзина</span>
                 </button>
@@ -41,7 +42,7 @@
                 </div>
                 <div class="cards">
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
                         <img src="img/tanuki/1.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -60,7 +61,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div  class="card wow fadeInUp" data-wow-delay="0.4s">
                         <img src="img/tanuki/2.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -79,7 +80,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div  class="card wow fadeInUp" data-wow-delay="0.6s">
                         <img src="img/tanuki/3.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -98,7 +99,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.2s">
                         <img src="img/tanuki/4.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -117,7 +118,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.4s">
                         <img src="img/tanuki/5.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
     
-                    <div class="card">
+                    <div class="card wow fadeInUp" data-wow-delay="0.6s">
                         <img src="img/tanuki/6.jpg" alt="image" height="250px" width="384px" class="card-image">
                         <div class="card-text">
                             <div class="card-heading">
@@ -177,5 +178,69 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="close">&times</button>
+            </div>
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="counter">
+                        <button class="change minus-one">-</button>
+                        <div class="count">1</div>
+                        <button class="change plus-one">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="counter">
+                        <button class="change minus-one">-</button>
+                        <div class="count">1</div>
+                        <button class="change plus-one">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="counter">
+                        <button class="change minus-one">-</button>
+                        <div class="count">1</div>
+                        <button class="change plus-one">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="counter">
+                        <button class="change minus-one">-</button>
+                        <span class="count">1</span>
+                        <button class="change plus-one">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Ролл угорь стандарт</span>
+                    <strong class="food-price">250 ₽</strong>
+                    <div class="counter">
+                        <button class="change minus-one">-</button>
+                        <div class="count">1</div>
+                        <button class="change plus-one">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="modal-pricetag">1250 ₽</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">Оформить заказ</button>
+                    <button class="button">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
