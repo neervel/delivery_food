@@ -143,8 +143,11 @@ body{
 }
 
 .card-image{
+  display: block;
+  margin: 0 auto;
   max-width: 384px;
   max-height: 250px;
+  
 }
 
 .card-text{
@@ -399,6 +402,7 @@ color: #000000;
   display: flex;
   align-items: center;
 }
+
 @media (max-width:1366px){
   .container{
     max-width: 960px;
@@ -415,7 +419,7 @@ color: #000000;
   }
 }
 
-@media (max-width:992px){
+@media (max-width:1064px){
   .container{
     max-width: 750px;
   }
@@ -439,7 +443,7 @@ color: #000000;
   }
 }
 
-@media (max-width:768px){
+@media (max-width:810px){
   .container{
     max-width: 600px;
   }
@@ -462,7 +466,7 @@ color: #000000;
   }
 }
 
-@media (max-width: 578px){
+@media (max-width: 649px){
   .container{
     width: 90%;
   }
@@ -470,6 +474,7 @@ color: #000000;
     flex-wrap: wrap;
   }
   .input-address{
+    min-width: 260px;
     margin-top: 15px;
     order: 5;
     flex: 1;
