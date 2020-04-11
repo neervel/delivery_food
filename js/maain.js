@@ -1,8 +1,5 @@
-console.log('hello');
-console.log(document);
 const cardButton = document.querySelector("#shopping-cart"),
   modal = document.querySelector(".modal"),
-  promo = document.querySelector(".restaurants"),
   close = document.querySelector(".close");
 
 cardButton.addEventListener('click', toggleModal);
