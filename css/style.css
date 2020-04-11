@@ -576,5 +576,11 @@ color: #000000;
   }
   .food-name{
     word-wrap: normal;
+    flex-basis: 100%;
+  }
+  .food-price{
+    margin-left: auto ;
+    margin-left: 0;
+    justify-content: center;
   }
 }
