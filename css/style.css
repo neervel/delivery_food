@@ -519,10 +519,27 @@ color: #000000;
     display: none;
   }
   .promo{
+    align-items: center;
     padding: 20px;
   }
+  .promo-title{
+    text-align: center;
+  }
+  .promo-text{
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .input-search{
+    order: 0;
+  }
+  .section-title{
+    order: 1;
+  }
   .section-heading{
-    flex-wrap: wrap;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
   }
   .footer-block{
     flex-wrap: wrap;
